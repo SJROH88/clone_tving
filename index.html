@@ -8,12 +8,51 @@
     <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
-    <h1><img src="./images/tving-new-logo-pc.svg" alt="TIVING"></h1>    
-    <a href="#">회원가입</a>
-    <a href="#">로그인</a>
-    <p>
-        티빙 오리지널부터<br>드라마.예능,영화,해외시리즈까지!<br>무제한으로 스트리밍해보세요. 
-    </p>
-    <a href="#">티빙로그인</a>
+    <header class="page-header">
+        <h1><img src="./images/tving-new-logo-pc.svg" alt="TIVING"></h1>    
+        <nav>
+            <a class="join" href="#">회원가입</a>
+            <a href="#">로그인</a> 
+        </nav>
+    </header>
+    <section class="intro">
+        <p>
+            티빙 오리지널부터<br>드라마.예능,영화,해외시리즈까지!<br>무제한으로 스트리밍해보세요. 
+        </p>
+        <a class="tlogin" href="#">티빙로그인</a> 
+    </section>
+    <section class="conte">
+        <p>
+           티빙 오리지널 시리즈 
+        </p>
+        <div>오직 티빙에서만 만날 수 있는<br>오리지널 콘텐츠을 감상해 보세요.</div>
+        <h1><img src="./images/poster_3.webp" alt="web"></h1>
+    </section>
+    <section class="newconte">
+        <p>
+           요즘 뜨는 모든 콘텐츠
+        </p>
+        <div>tvN.JTBC.Mnet프로그램, 영화, 해외시리즈,<br>파라마운드+ 오리지널 및 독점 시리즈</div>
+        <h1><img src="./images/list_2.webp" alt="list1"></h1>
+    </section>
+
+    <script>
+
+        const headerScroll = () => {
+            const header = document.querySelector('.page-header');
+            window.addEventListener('scroll', e => {
+                let pos = window.scrollY;
+                console.log(pos)
+    
+                if( pos > 190) {
+                    header.style.backgroundColor = '#000';
+                } else {
+                    header.style.backgroundColor = 'transparent';
+                }
+            })
+        }
+
+        headerScroll();
+    </script>
 </body>
 </html>

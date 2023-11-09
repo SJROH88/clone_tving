@@ -2,5 +2,91 @@
 
 body {
     background-color:#222;
+    background-image:url('../images/body_bg.jpg');
+    background-size:100% auto;
+    background-repeat:no-repeat;
     color:#fff;
+    height:3000px;
+}
+.page-header{ 
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0; 
+    transition:0.4s;
+}
+
+.page-header h1 {
+    
+}
+
+.page-header nav { 
+   display:flex;
+   column-gap:7px;
+}
+.page-header a{
+    display:block;
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:4px;
+    padding:7px;
+    font-size:12px;
+}
+.page-header .join{
+    background-color:#fe153c;
+    border-color:#fe153c;
+}
+
+.intro {
+    text-align:center;
+    padding:20vh 0;
+}
+
+/* 
+vh : viewport height 100% == 100vh
+vw : viewport width   100% == 100vw
+*/
+
+.intro p{
+    font-size:40px;
+    font-weight:bold;
+    
+} 
+.tlogin{
+    display:block;
+    border-radius:10px;
+    background-color:red;
+    width:370px;
+    margin:40px auto 0; 
+    padding:20px 0;
+    font-size:20px; 
+}
+.conte {
+    text-align:center;
+    padding:20vh 0;
+}
+
+.conte p{
+    font-size:40px;
+    font-weight:bold;
+}
+.conte div{
+    font-size:20px;
+    font-weight:bold;
+}
+.newconte {
+    text-align:center;
+    padding:20vh 0;
+}
+
+.newconte p{
+    font-size:40px;
+    font-weight:bold;
+}
+.newconte div{
+    font-size:20px;
+    font-weight:bold;
 }
