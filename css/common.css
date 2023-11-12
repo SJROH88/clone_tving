@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat:wght@100;400;900&display=swap');
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*[lang="en"] , .en{
+    font-family:'MonteCarlo', sans-serif;
+}
 
 body {
     background-color:#222;
@@ -7,6 +18,7 @@ body {
     background-repeat:no-repeat;
     color:#fff;
     height:3000px;
+    font-family: 'Pretendard',sans-serif;
 }
 .page-header{ 
     display:flex;
@@ -64,29 +76,36 @@ vw : viewport width   100% == 100vw
     padding:20px 0;
     font-size:20px; 
 }
-.conte {
+
+.page-main {
     text-align:center;
-    padding:20vh 0;
+    font-weight:bold;
 }
 
-.conte p{
-    font-size:40px;
-    font-weight:bold;
-}
-.conte div{
-    font-size:20px;
-    font-weight:bold;
-}
-.newconte {
-    text-align:center;
+.page-main > section {
     padding:20vh 0;
+} 
+ 
+.page-main h2 {
+    font-size:40px;
 }
 
-.newconte p{
-    font-size:40px;
-    font-weight:bold;
-}
-.newconte div{
+.page-main header p {
     font-size:20px;
-    font-weight:bold;
+} 
+
+.page-main > section header {
+    margin-bottom:30px;
+}
+.conte img{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    align-items:center;
+    position:relative;
+}
+.position-test{
+    display:flex;
+    flex-direction:row;
+    background-color:blue;
 }
