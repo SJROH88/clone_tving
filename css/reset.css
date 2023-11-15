@@ -25,3 +25,6 @@ i, em, address {
 button{
     background-color: transparent;
 }
+img{
+    max-width:100%;
+}

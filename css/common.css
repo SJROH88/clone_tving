@@ -97,15 +97,33 @@ vw : viewport width   100% == 100vw
 .page-main > section header {
     margin-bottom:30px;
 }
-.conte img{
-    display:flex;
-    justify-content:space-around;
-    flex-direction:row;
-    align-items:center;
+.conte .posters{
+    outline:1px solid red;
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
     position:relative;
 }
-.position-test{
-    display:flex;
-    flex-direction:row;
-    background-color:blue;
+
+.conte .posters .a,
+.conte .posters .c {
+    top:50%; 
+    width:75%; 
+    position:absolute;
+    z-index:1;
+    opacity:0.2;
+}
+.conte .posters .a{ 
+    left:0;
+    transform:translate(-50%, -50%); 
+   
+}
+.conte .posters .b{
+    position:relative;
+    z-index:3;
+    box-shadow:0 0 50px #000;
+}
+.conte .posters .c{ 
+    right:0;
+    transform:translate(50%, -50%);  
 }
